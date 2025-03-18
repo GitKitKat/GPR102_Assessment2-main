@@ -33,6 +33,11 @@ void ATargetLauncher::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
+void ATargetLauncher::Interact_Implementation()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Blue, TEXT("Projectile Interacted"));
+}
+
 void ATargetLauncher::LaunchTarget()
 {
 	if (!ProjectileClass) // Check if we have a valid class assigned
@@ -61,7 +66,7 @@ void ATargetLauncher::LaunchTarget()
 	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
 	// Spawn the projectile
-	AActor* SpawnedProjectile = World->SpawnActor<AActor>(ProjectileClass, AdjustedLocation, AdjustedRotation, SpawnParams);
+	TObjectPtr<AActor> SpawnedProjectile = World->SpawnActor<AActor>(ProjectileClass, AdjustedLocation, AdjustedRotation, SpawnParams);
 	if (SpawnedProjectile)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Target Projectile spawned with random spread: Yaw %.2f, Pitch %.2f"), RandomYaw, RandomPitch);

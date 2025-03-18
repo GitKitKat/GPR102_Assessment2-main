@@ -4,13 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "TurretMaster/Public/Interfaces/FPInteractInterface.h"
 #include "TargetLauncher.generated.h"
 
 class ATargetProjectile;
 class UArrowComponent;
 
 UCLASS()
-class TURRETMASTER_API ATargetLauncher : public AActor
+class TURRETMASTER_API ATargetLauncher : public AActor, public IFPInteractInterface
 {
 	GENERATED_BODY()
 
@@ -21,6 +22,8 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	virtual void Interact_Implementation() override;
 
 public:
 	// Called every frame

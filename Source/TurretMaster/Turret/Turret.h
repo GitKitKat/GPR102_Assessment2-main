@@ -4,12 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "TurretMaster/Public/Interfaces/FPInteractInterface.h"
+#include "Components/BoxComponent.h"
 #include "Turret.generated.h"
 
 class ATurretProjectile;
 
 UCLASS()
-class TURRETMASTER_API ATurret : public AActor
+class TURRETMASTER_API ATurret : public AActor, public IFPInteractInterface
 {
 	GENERATED_BODY()
 	
@@ -21,35 +23,41 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	//virtual void Interact_Implementation() override;
+	//void Interact();
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void Fire() const;
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void SetYaw(float TargetYaw) const;
 	
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void SetPitch(float TargetPitch) const;
 
 protected:
 	// Components
 	UPROPERTY(EditDefaultsOnly)
-	UStaticMeshComponent* BaseMesh;
+	TObjectPtr<UStaticMeshComponent> BaseMesh;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	USceneComponent* RotationPoint;
+	TObjectPtr<USceneComponent> RotationPoint;
 
 	UPROPERTY(EditDefaultsOnly)
-	UStaticMeshComponent* ArmMesh;
+	TObjectPtr<UStaticMeshComponent> ArmMesh;
 	
 	UPROPERTY(EditDefaultsOnly)
-	UStaticMeshComponent* CannonMesh;
+	TObjectPtr<UStaticMeshComponent> CannonMesh;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	USceneComponent* CentreMuzzle;
+	TObjectPtr<USceneComponent> CentreMuzzle;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	TObjectPtr<UBoxComponent> BoxCollider;
 	
 	// Variables
 	UPROPERTY(EditDefaultsOnly)
@@ -57,4 +65,22 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly)
 	float TurnSpeed = 5.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<TObjectPtr<AActor>> TargetInRange;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FVector> FirstContactArray;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FVector> SecondContactArray;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int CurrentTarget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FVector DistanceToProjectile;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FVector DistanceToRangeLimit;
+	
 };

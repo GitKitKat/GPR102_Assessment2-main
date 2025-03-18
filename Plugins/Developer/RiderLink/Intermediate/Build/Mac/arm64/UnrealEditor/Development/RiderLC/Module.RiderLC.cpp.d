@@ -2252,4 +2252,560 @@
   Runtime/Core/Public/Logging/LogTrace.h \
   Runtime/Core/Public/ProfilingDebugging/FormatArgsTrace.h \
   Runtime/Core/Public/Modules/Boilerplate/ModuleBoilerplate.h \
-  Runtime/Core/Public/Modules/VisualizerDebuggingState.h
+  Runtime/Core/Public/Modules/VisualizerDebuggingState.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLC/Private/RiderLC.cpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLC/Private/RiderLC.hpp \
+  Runtime/Core/Public/CoreMinimal.h \
+  Runtime/Core/Public/Templates/IntegralConstant.h \
+  Runtime/Core/Public/Templates/IsClass.h \
+  Runtime/Core/Public/Misc/Compression.h \
+  Runtime/Core/Public/Containers/Map.h \
+  Runtime/Core/Public/Algo/Reverse.h \
+  Runtime/Core/Public/Containers/Set.h \
+  Runtime/Core/Public/Misc/StructBuilder.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/Core/Public/Templates/FunctionFwd.h \
+  Runtime/Core/Public/Templates/IsInvocable.h \
+  Runtime/Core/Public/Templates/IsMemberPointer.h \
+  Runtime/Core/Public/Containers/SparseArray.h \
+  Runtime/Core/Public/Containers/ScriptArray.h \
+  Runtime/Core/Public/Containers/BitArray.h \
+  Runtime/Core/Public/Serialization/StructuredArchive.h \
+  Runtime/Core/Public/Serialization/Formatters/BinaryArchiveFormatter.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveFormatter.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveNameHelpers.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveAdapters.h \
+  Runtime/Core/Public/Concepts/Insertable.h \
+  Runtime/Core/Public/Serialization/ArchiveProxy.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveSlots.h \
+  Runtime/Core/Public/Misc/Optional.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveFwd.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveSlotBase.h \
+  Runtime/Core/Public/Templates/UniqueObj.h \
+  Runtime/Core/Public/Templates/UniquePtr.h \
+  Runtime/Core/Public/Templates/RemoveExtent.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveDefines.h \
+  Runtime/Core/Public/Templates/RetainedRef.h \
+  Runtime/Core/Public/Templates/Tuple.h \
+  Runtime/Core/Public/Delegates/IntegerSequence.h \
+  Runtime/Core/Public/Misc/FrameNumber.h \
+  Runtime/Core/Public/Misc/Parse.h Runtime/Core/Public/Math/Color.h \
+  Runtime/Core/Public/Math/ColorList.h \
+  Runtime/Core/Public/Math/IntPoint.h \
+  Runtime/Core/Public/Misc/LargeWorldCoordinatesSerializer.h \
+  Runtime/Core/Public/Math/IntVector.h \
+  Runtime/Core/Public/Math/Vector2D.h \
+  Runtime/Core/Public/Misc/NetworkVersion.h \
+  Runtime/Core/Public/Delegates/Delegate.h \
+  Runtime/Core/Public/Templates/SharedPointer.h \
+  Runtime/Core/Public/Templates/SharedPointerInternals.h \
+  Runtime/Core/Public/Templates/SharedPointerFwd.h \
+  Runtime/Core/Public/Templates/SharedPointerTesting.inl \
+  Runtime/Core/Public/UObject/WeakObjectPtrTemplates.h \
+  Runtime/Core/Public/UObject/WeakObjectPtrTemplatesFwd.h \
+  Runtime/Core/Public/UObject/StrongObjectPtrTemplatesFwd.h \
+  Runtime/Core/Public/Delegates/MulticastDelegateBase.h \
+  Runtime/Core/Public/Delegates/IDelegateInstance.h \
+  Runtime/Core/Public/Delegates/DelegateSettings.h \
+  Runtime/Core/Public/Delegates/DelegateBase.h \
+  Runtime/Core/Public/Delegates/DelegateAccessHandler.h \
+  Runtime/Core/Public/Misc/MTAccessDetector.h \
+  Runtime/Core/Public/HAL/PlatformStackWalk.h \
+  Runtime/Core/Public/Mac/MacPlatformStackWalk.h \
+  Runtime/Core/Public/Apple/ApplePlatformStackWalk.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformStackWalk.h \
+  Runtime/Core/Public/Misc/TransactionallySafeCriticalSection.h \
+  Runtime/Core/Public/Misc/TransactionallySafeScopeLock.h \
+  Runtime/Core/Public/Misc/ScopeLock.h \
+  Runtime/Core/Public/Delegates/DelegateInstancesImplFwd.h \
+  Runtime/Core/Public/Delegates/DelegateInstanceInterface.h \
+  Runtime/Core/Public/Delegates/DelegateInstancesImpl.h \
+  Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl \
+  Runtime/Core/Public/UObject/ScriptDelegates.h \
+  Runtime/Core/Public/Delegates/DelegateCombinations.h \
+  Runtime/Core/Public/Misc/EngineNetworkCustomVersion.h \
+  Runtime/Core/Public/Misc/Guid.h Runtime/Core/Public/Hash/CityHash.h \
+  Runtime/Core/Public/Math/IntRect.h Runtime/Core/Public/Misc/ByteSwap.h \
+  Runtime/Core/Public/Internationalization/CulturePointer.h \
+  Runtime/Core/Public/Internationalization/TextLocalizationManager.h \
+  Runtime/Core/Public/Async/TaskGraphFwd.h \
+  Runtime/Core/Public/Async/TaskGraphDefinitions.h \
+  Runtime/Core/Public/Templates/RefCounting.h \
+  Runtime/Core/Public/Internationalization/LocKeyFuncs.h \
+  Runtime/Core/Public/Internationalization/LocTesting.h \
+  Runtime/Core/Public/Internationalization/LocalizedTextSourceTypes.h \
+  Runtime/Core/Public/Internationalization/TextKey.h \
+  Runtime/Core/Public/Internationalization/Text.h \
+  Runtime/Core/Public/Containers/SortedMap.h \
+  Runtime/Core/Public/Internationalization/TextComparison.h \
+  Runtime/Core/Public/Internationalization/StringTableCoreFwd.h \
+  Runtime/Core/Public/Internationalization/ITextData.h \
+  Runtime/Core/Public/Internationalization/Internationalization.h \
+  Runtime/Core/Public/Math/Vector.h Runtime/Core/Public/Math/Axis.h \
+  Runtime/Core/Public/Math/VectorRegister.h \
+  Runtime/Core/Public/Math/UnrealMathNeon.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_neon.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_bf16.h \
+  Runtime/Core/Public/Math/Float16.h Runtime/Core/Public/Math/Float32.h \
+  Runtime/Core/Public/Math/UnrealMathVectorConstants.h \
+  Runtime/Core/Public/Math/UnrealMathVectorCommon.h \
+  Runtime/Core/Public/Math/Vector4.h \
+  Runtime/Core/Public/Math/TwoVectors.h Runtime/Core/Public/Math/Edge.h \
+  Runtime/Core/Public/Math/Plane.h Runtime/Core/Public/Math/Sphere.h \
+  Runtime/Core/Public/Math/Matrix.h Runtime/Core/Public/Math/Rotator.h \
+  Runtime/Core/Public/Math/Matrix.inl \
+  Runtime/Core/Public/Math/Transform.h Runtime/Core/Public/Math/Quat.h \
+  Runtime/Core/Public/Math/ScalarRegister.h \
+  Runtime/Core/Public/Math/TransformNonVectorized.h \
+  Runtime/Core/Public/Math/TransformVectorized.h \
+  Runtime/Core/Public/Math/UnrealMathSSE.h \
+  Runtime/Core/Public/Math/CapsuleShape.h \
+  Runtime/Core/Public/Misc/DateTime.h \
+  Runtime/Core/Public/Math/RangeBound.h \
+  Runtime/Core/Public/Misc/AutomationEvent.h \
+  Runtime/Core/Public/Math/Range.h Runtime/Core/Public/Math/RangeSet.h \
+  Runtime/Core/Public/Math/Box.h Runtime/Core/Public/Math/Box2D.h \
+  Runtime/Core/Public/Math/BoxSphereBounds.h \
+  Runtime/Core/Public/Math/OrientedBox.h \
+  Runtime/Core/Public/Math/RotationTranslationMatrix.h \
+  Runtime/Core/Public/Math/RotationAboutPointMatrix.h \
+  Runtime/Core/Public/Math/ScaleRotationTranslationMatrix.h \
+  Runtime/Core/Public/Math/RotationMatrix.h \
+  Runtime/Core/Public/Math/QuatRotationTranslationMatrix.h \
+  Runtime/Core/Public/Math/PerspectiveMatrix.h \
+  Runtime/Core/Public/Math/OrthoMatrix.h \
+  Runtime/Core/Public/Math/TranslationMatrix.h \
+  Runtime/Core/Public/Math/InverseRotationMatrix.h \
+  Runtime/Core/Public/Math/ScaleMatrix.h \
+  Runtime/Core/Public/Math/MirrorMatrix.h \
+  Runtime/Core/Public/Math/ClipProjectionMatrix.h \
+  Runtime/Core/Public/Math/InterpCurvePoint.h \
+  Runtime/Core/Public/Math/InterpCurve.h \
+  Runtime/Core/Public/Algo/MinElement.h \
+  Runtime/Core/Public/Algo/Impl/RangePointerType.h \
+  Runtime/Core/Public/Math/CurveEdInterface.h \
+  Runtime/Core/Public/Math/Float16Color.h \
+  Runtime/Core/Public/Math/Vector2DHalf.h \
+  Runtime/Core/Public/Math/ConvexHull2d.h \
+  Runtime/Core/Public/Math/UnrealMath.h Runtime/Core/Public/Math/Ray.h \
+  Runtime/Core/Public/Containers/Ticker.h \
+  Runtime/Core/Public/Containers/MpscQueue.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/LifetimeDefinition.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/core_traits.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/Void.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind_back.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind_front.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/array \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__hash_table \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/swap_allocator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/polymorphic_allocator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/memory_resource.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_allocator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_fwd.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_bool.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_parse_context.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_error.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string_view.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/char_traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdio \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integral.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/tables.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_base_10.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_result.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/errc.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_32_64_or_128_bit.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_output.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_to_n_result.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/parser_std_format_spec.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_arg.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/unicode.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/extended_grapheme_cluster_table.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/width_estimation_table.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/noexcept_move_assign_container.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/once_flag.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/no_destroy.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/__xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/___wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_condition.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/streambuf \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/nl_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/temp_value.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/builtin_new_allocator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/strip_signature.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/mem_fn.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/mem_fun_ref.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_negate.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/LifetimeImpl.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/hash.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/thirdparty.hpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_set.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_hash.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_map.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/string-view-lite/include/nonstd/string_view.hpp \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/container_adaptor.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/range_default_formatter.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/statically_widen.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/range_formatter.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_context.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_arg_store.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_args.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_functions.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_char.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/write_escaped.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/escaped_output_table.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_floating_point.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/chars_format.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_floating_point.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_pointer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_tuple.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/rd_core_export.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/Lifetime.h \
+  Runtime/Core/Public/Modules/ModuleManager.h \
+  Runtime/Core/Public/Misc/CoreMisc.h \
+  Runtime/Core/Public/HAL/ThreadSingleton.h \
+  Runtime/Core/Public/HAL/TlsAutoCleanup.h \
+  Runtime/Core/Public/Modules/ModuleInterface.h \
+  Runtime/Launch/Resources/Version.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/IRiderLink.hpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/RdEditorModel/RdEditorModel.Pregenerated.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/Protocol.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IProtocol.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IRdDynamic.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RName.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/rd_framework_export.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/Serializers.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/RdId.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/Buffer.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/DateTime.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/core_util.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/erase_if.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/gen_util.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/allocator.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/overloaded.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/shared_function.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/to_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/formatter.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/jthread.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_source.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/intrusive_shared_ptr.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_state.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/atomic_unique_lock.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/intrusive_list_view.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_token.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/utf-cpp/include/ww898/utf_converters.hpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/utf-cpp/include/ww898/utf_selector.hpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/utf-cpp/include/ww898/cp_utf8.hpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/utf-cpp/include/ww898/cp_utf16.hpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/utf-cpp/include/ww898/cp_utf32.hpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/utf-cpp/include/ww898/cp_utfw.hpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/utf-cpp/include/ww898/utf_config.hpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/wrapper.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/spdlog.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/common.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/tweakme.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/null_mutex.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/calendar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/concepts.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/day.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month_weekday.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/weekday.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/monthday.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/literals.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/formatter.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/ostream.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/parser_std_format_spec.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/charconv \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_integral.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_result.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/fmt.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/core.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/format.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/registry.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/logger.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/log_msg.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/backtracer.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/log_msg_buffer.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/circular_q.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/version.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/synchronous_factory.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/list.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/util/hashing.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/ISerializable.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/protocol/Identities.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IUnknownInstance.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/RdAny.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/DefaultAbstractDeclaration.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/unordered_map.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/base/IScheduler.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IWire.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/interfaces.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IRdReactive.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IRdBindable.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/IRdWireable.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/Property.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/IProperty.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/SignalX.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/SignalCookie.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/IPropertyBase.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/lifetime/SequentialLifetimes.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/SerializationCtx.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/regex \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/intern/InternRoot.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/RdReactiveBase.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/RdBindableBase.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/util/guards.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/intern/InternScheduler.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/InternedAnySerializer.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RdSignal.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/Polymorphic.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RdProperty.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/RdPropertyBase.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RdList.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/ViewableList.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/IViewableList.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/viewable_collections.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RdSet.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/ViewableSet.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/IViewableSet.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/impl/RdMap.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/ViewableMap.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/reactive/base/IViewableMap.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/base/ISerializersOwner.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/NullableSerializer.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/AbstractPolymorphic.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/util/framework_traits.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/ArraySerializer.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/InternedSerializer.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/ext/RdExtBase.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/ext/ExtWire.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdCall.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdTask.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdTaskImpl.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdTaskResult.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SynchronousScheduler.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/WiredRdTask.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/WiredRdTaskImpl.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdEndpoint.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/task/RdSymmetricCall.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/enum.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/RdEditorProtocol/instantiations_RdEditorRoot.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/ConnectionInfo.Pregenerated.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/instantiations_UE4Library.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/UE4TypesMarshallers.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/UnrealLogEvent.Pregenerated.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/LogMessageInfo.Pregenerated.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/StringRange.Pregenerated.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/BlueprintReference.Pregenerated.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/UClass.Pregenerated.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/PlayState.Pregenerated.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/Model/Library/UE4Library/RequestResultBase.Pregenerated.h \
+  Runtime/Core/Public/Async/Async.h Runtime/Core/Public/Async/Future.h \
+  Runtime/Core/Public/HAL/Event.h \
+  Runtime/Core/Public/HAL/PlatformProcess.h \
+  Runtime/Core/Public/Mac/MacPlatformProcess.h \
+  Runtime/Core/Public/Apple/ApplePlatformProcess.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformProcess.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformAffinity.h \
+  Runtime/Core/Public/Async/TaskGraphInterfaces.h \
+  Runtime/Core/Public/Containers/LockFreeList.h \
+  Runtime/Core/Public/Misc/NoopCounter.h \
+  Runtime/Core/Public/Stats/Stats.h \
+  Runtime/Core/Public/HAL/PlatformTime.h \
+  Runtime/Core/Public/Mac/MacPlatformTime.h \
+  Runtime/Core/Public/Apple/ApplePlatformTime.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformTime.h \
+  Runtime/Core/Public/Stats/StatsCommon.h \
+  Runtime/Core/Public/Stats/Stats2.h \
+  Runtime/Core/Public/Containers/ChunkedArray.h \
+  Runtime/Core/Public/Containers/IndirectArray.h \
+  Runtime/Core/Public/HAL/LowLevelMemTracker.h \
+  Runtime/Core/Public/HAL/LowLevelMemTrackerDefines.h \
+  Runtime/Core/Public/ProfilingDebugging/TagTrace.h \
+  Runtime/TraceLog/Public/Trace/Detail/LogScope.h \
+  Runtime/TraceLog/Public/Trace/Detail/Writer.inl \
+  Runtime/Core/Public/ProfilingDebugging/MiscTrace.h \
+  Runtime/Core/Public/Stats/StatsTrace.h \
+  Runtime/Core/Public/HAL/IConsoleManager.h \
+  Runtime/Core/Public/Misc/AccessDetection.h \
+  Runtime/Core/Public/Features/IModularFeature.h \
+  Runtime/Core/Public/Containers/LockFreeFixedSizeAllocator.h \
+  Runtime/Core/Public/Experimental/ConcurrentLinearAllocator.h \
+  Runtime/Core/Public/HAL/MallocAnsi.h \
+  Runtime/Core/Public/Misc/MemStack.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/sanitizer/asan_interface.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/sanitizer/common_interface_defs.h \
+  Runtime/Core/Public/Misc/Timeout.h \
+  Runtime/Core/Public/ProfilingDebugging/MetadataTrace.h \
+  Runtime/Core/Public/ProfilingDebugging/StringsTrace.h \
+  Runtime/TraceLog/Public/Trace/Trace.inl \
+  Runtime/TraceLog/Public/Trace/Detail/EventNode.h \
+  Runtime/TraceLog/Public/Trace/Detail/Field.h \
+  Runtime/TraceLog/Public/Trace/Detail/Atomic.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocol.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol0.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol1.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol2.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol3.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol4.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol5.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol6.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol7.h \
+  Runtime/TraceLog/Public/Trace/Detail/Important/ImportantLogScope.inl \
+  Runtime/TraceLog/Public/Trace/Detail/Important/ImportantLogScope.h \
+  Runtime/TraceLog/Public/Trace/Detail/Important/SharedBuffer.h \
+  Runtime/TraceLog/Public/Trace/Detail/LogScope.inl \
+  Runtime/Core/Public/Async/Fundamental/Task.h \
+  Runtime/Core/Public/Async/Fundamental/TaskDelegate.h \
+  Runtime/Core/Public/Misc/ScopeExit.h \
+  Runtime/Core/Public/Async/TaskTrace.h \
+  Runtime/Core/Public/Tasks/TaskPrivate.h \
+  Runtime/Core/Public/Async/EventCount.h \
+  Runtime/Core/Public/Async/ParkingLot.h \
+  Runtime/Core/Public/Misc/MonotonicTime.h \
+  Runtime/Core/Public/Async/Fundamental/Scheduler.h \
+  Runtime/Core/Public/Async/Fundamental/TaskShared.h \
+  Runtime/Core/Public/Async/Fundamental/WaitingQueue.h \
+  Runtime/Core/Public/HAL/PlatformAffinity.h \
+  Runtime/Core/Public/Mac/MacPlatformAffinity.h \
+  Runtime/Core/Public/Apple/ApplePlatformAffinity.h \
+  Runtime/Core/Public/HAL/Thread.h \
+  Runtime/Core/Public/Async/Fundamental/LocalQueue.h \
+  Runtime/Core/Public/Math/RandomStream.h \
+  Runtime/Core/Public/Experimental/Containers/FAAArrayQueue.h \
+  Runtime/Core/Public/Experimental/Containers/HazardPointer.h \
+  Runtime/Core/Public/Async/Mutex.h Runtime/Core/Public/Async/LockTags.h \
+  Runtime/Core/Public/Async/UniqueLock.h \
+  Runtime/Core/Public/Async/InheritedContext.h \
+  Runtime/Core/Public/HAL/Runnable.h \
+  Runtime/Core/Public/HAL/RunnableThread.h \
+  Runtime/Core/Public/Misc/CoreStats.h Runtime/Core/Public/Misc/Fork.h \
+  Runtime/Core/Public/Misc/IQueuedWork.h \
+  Runtime/Core/Public/Misc/QueuedThreadPool.h \
+  Runtime/CoreUObject/Public/Misc/HotReloadInterface.h \
+  Runtime/CoreUObject/Public/UObject/CoreNative.h \
+  Runtime/CoreUObject/Public/UObject/Object.h \
+  Runtime/CoreUObject/Public/UObject/Script.h \
+  Runtime/Core/Public/Memory/VirtualStackAllocator.h \
+  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
+  Runtime/CoreUObject/Public/UObject/UObjectBaseUtility.h \
+  Runtime/Core/Public/Containers/VersePathFwd.h \
+  Runtime/CoreUObject/Public/UObject/GarbageCollectionGlobals.h \
+  Runtime/CoreUObject/Public/UObject/UObjectArray.h \
+  Runtime/CoreUObject/Public/UObject/UObjectBase.h \
+  Runtime/CoreUObject/Public/UObject/UObjectGlobals.h \
+  Runtime/Core/Public/Misc/OutputDeviceRedirector.h \
+  Runtime/Core/Public/Templates/PimplPtr.h \
+  Runtime/CoreUObject/Public/Misc/PackagePath.h \
+  Runtime/CoreUObject/Public/Serialization/ArchiveUObject.h \
+  Runtime/CoreUObject/Public/Templates/IsTObjectPtr.h \
+  Runtime/CoreUObject/Public/UObject/PrimaryAssetId.h \
+  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
+  Runtime/CoreUObject/Public/UObject/VerseTypesFwd.h \
+  Runtime/CoreUObject/Public/UObject/ObjectPtr.h \
+  Runtime/CoreUObject/Public/UObject/ObjectHandle.h \
+  Runtime/CoreUObject/Public/UObject/ObjectHandleTracking.h \
+  Runtime/CoreUObject/Public/UObject/ObjectHandleDefines.h \
+  Runtime/CoreUObject/Public/UObject/ObjectRef.h \
+  Runtime/CoreUObject/Public/UObject/ObjectFwd.h \
+  Runtime/CoreUObject/Public/UObject/PackedObjectRef.h \
+  Runtime/Core/Public/Templates/NonNullPointer.h \
+  ThirdParty/GuidelinesSupportLibrary/GSL-1144/include/gsl/pointers \
+  ThirdParty/GuidelinesSupportLibrary/GSL-1144/include/gsl/assert \
+  Runtime/CoreUObject/Public/UObject/UObjectMarks.h \
+  Runtime/CoreUObject/Public/UObject/ObjectCompileContext.h \
+  Runtime/Core/Public/ProfilingDebugging/ResourceSize.h \
+  Runtime/Core/Public/Misc/CompilationResult.h

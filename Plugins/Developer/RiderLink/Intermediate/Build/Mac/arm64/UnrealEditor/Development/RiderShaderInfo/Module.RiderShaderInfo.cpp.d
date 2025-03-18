@@ -2252,4 +2252,308 @@
   Runtime/Core/Public/Logging/LogTrace.h \
   Runtime/Core/Public/ProfilingDebugging/FormatArgsTrace.h \
   Runtime/Core/Public/Modules/Boilerplate/ModuleBoilerplate.h \
-  Runtime/Core/Public/Modules/VisualizerDebuggingState.h
+  Runtime/Core/Public/Modules/VisualizerDebuggingState.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.cpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.h \
+  Runtime/Core/Public/Modules/ModuleInterface.h \
+  Runtime/Core/Public/HAL/FileManager.h \
+  Runtime/Core/Public/Misc/DateTime.h \
+  Runtime/Core/Public/Serialization/StructuredArchive.h \
+  Runtime/Core/Public/Serialization/Formatters/BinaryArchiveFormatter.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveFormatter.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveNameHelpers.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveAdapters.h \
+  Runtime/Core/Public/Concepts/Insertable.h \
+  Runtime/Core/Public/Serialization/ArchiveProxy.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveSlots.h \
+  Runtime/Core/Public/Misc/Optional.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveFwd.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveSlotBase.h \
+  Runtime/Core/Public/Templates/UniqueObj.h \
+  Runtime/Core/Public/Templates/UniquePtr.h \
+  Runtime/Core/Public/Templates/RemoveExtent.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveDefines.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformFile.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/Core/Public/Templates/FunctionFwd.h \
+  Runtime/Core/Public/Templates/IsInvocable.h \
+  Runtime/Core/Public/Templates/IsMemberPointer.h \
+  Runtime/Core/Public/Templates/ValueOrError.h \
+  Runtime/Core/Public/Misc/TVariant.h \
+  Runtime/Core/Public/Misc/TVariantMeta.h \
+  Runtime/Core/Public/Delegates/IntegerSequence.h \
+  Runtime/Core/Public/Templates/Tuple.h \
+  Runtime/Projects/Public/Interfaces/IPluginManager.h \
+  Runtime/Core/Public/CoreMinimal.h \
+  Runtime/Core/Public/Templates/IntegralConstant.h \
+  Runtime/Core/Public/Templates/IsClass.h \
+  Runtime/Core/Public/Misc/Compression.h \
+  Runtime/Core/Public/Containers/Map.h \
+  Runtime/Core/Public/Algo/Reverse.h \
+  Runtime/Core/Public/Containers/Set.h \
+  Runtime/Core/Public/Misc/StructBuilder.h \
+  Runtime/Core/Public/Containers/SparseArray.h \
+  Runtime/Core/Public/Containers/ScriptArray.h \
+  Runtime/Core/Public/Containers/BitArray.h \
+  Runtime/Core/Public/Templates/RetainedRef.h \
+  Runtime/Core/Public/Misc/FrameNumber.h \
+  Runtime/Core/Public/Misc/Parse.h Runtime/Core/Public/Math/Color.h \
+  Runtime/Core/Public/Math/ColorList.h \
+  Runtime/Core/Public/Math/IntPoint.h \
+  Runtime/Core/Public/Misc/LargeWorldCoordinatesSerializer.h \
+  Runtime/Core/Public/Math/IntVector.h \
+  Runtime/Core/Public/Math/Vector2D.h \
+  Runtime/Core/Public/Misc/NetworkVersion.h \
+  Runtime/Core/Public/Delegates/Delegate.h \
+  Runtime/Core/Public/Templates/SharedPointer.h \
+  Runtime/Core/Public/Templates/SharedPointerInternals.h \
+  Runtime/Core/Public/Templates/SharedPointerFwd.h \
+  Runtime/Core/Public/Templates/SharedPointerTesting.inl \
+  Runtime/Core/Public/UObject/WeakObjectPtrTemplates.h \
+  Runtime/Core/Public/UObject/WeakObjectPtrTemplatesFwd.h \
+  Runtime/Core/Public/UObject/StrongObjectPtrTemplatesFwd.h \
+  Runtime/Core/Public/Delegates/MulticastDelegateBase.h \
+  Runtime/Core/Public/Delegates/IDelegateInstance.h \
+  Runtime/Core/Public/Delegates/DelegateSettings.h \
+  Runtime/Core/Public/Delegates/DelegateBase.h \
+  Runtime/Core/Public/Delegates/DelegateAccessHandler.h \
+  Runtime/Core/Public/Misc/MTAccessDetector.h \
+  Runtime/Core/Public/HAL/PlatformStackWalk.h \
+  Runtime/Core/Public/Mac/MacPlatformStackWalk.h \
+  Runtime/Core/Public/Apple/ApplePlatformStackWalk.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformStackWalk.h \
+  Runtime/Core/Public/Misc/TransactionallySafeCriticalSection.h \
+  Runtime/Core/Public/Misc/TransactionallySafeScopeLock.h \
+  Runtime/Core/Public/Misc/ScopeLock.h \
+  Runtime/Core/Public/Delegates/DelegateInstancesImplFwd.h \
+  Runtime/Core/Public/Delegates/DelegateInstanceInterface.h \
+  Runtime/Core/Public/Delegates/DelegateInstancesImpl.h \
+  Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl \
+  Runtime/Core/Public/UObject/ScriptDelegates.h \
+  Runtime/Core/Public/Delegates/DelegateCombinations.h \
+  Runtime/Core/Public/Misc/EngineNetworkCustomVersion.h \
+  Runtime/Core/Public/Misc/Guid.h Runtime/Core/Public/Hash/CityHash.h \
+  Runtime/Core/Public/Math/IntRect.h Runtime/Core/Public/Misc/ByteSwap.h \
+  Runtime/Core/Public/Internationalization/CulturePointer.h \
+  Runtime/Core/Public/Internationalization/TextLocalizationManager.h \
+  Runtime/Core/Public/Async/TaskGraphFwd.h \
+  Runtime/Core/Public/Async/TaskGraphDefinitions.h \
+  Runtime/Core/Public/Templates/RefCounting.h \
+  Runtime/Core/Public/Internationalization/LocKeyFuncs.h \
+  Runtime/Core/Public/Internationalization/LocTesting.h \
+  Runtime/Core/Public/Internationalization/LocalizedTextSourceTypes.h \
+  Runtime/Core/Public/Internationalization/TextKey.h \
+  Runtime/Core/Public/Internationalization/Text.h \
+  Runtime/Core/Public/Containers/SortedMap.h \
+  Runtime/Core/Public/Internationalization/TextComparison.h \
+  Runtime/Core/Public/Internationalization/StringTableCoreFwd.h \
+  Runtime/Core/Public/Internationalization/ITextData.h \
+  Runtime/Core/Public/Internationalization/Internationalization.h \
+  Runtime/Core/Public/Math/Vector.h Runtime/Core/Public/Math/Axis.h \
+  Runtime/Core/Public/Math/VectorRegister.h \
+  Runtime/Core/Public/Math/UnrealMathNeon.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_neon.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/arm_bf16.h \
+  Runtime/Core/Public/Math/Float16.h Runtime/Core/Public/Math/Float32.h \
+  Runtime/Core/Public/Math/UnrealMathVectorConstants.h \
+  Runtime/Core/Public/Math/UnrealMathVectorCommon.h \
+  Runtime/Core/Public/Math/Vector4.h \
+  Runtime/Core/Public/Math/TwoVectors.h Runtime/Core/Public/Math/Edge.h \
+  Runtime/Core/Public/Math/Plane.h Runtime/Core/Public/Math/Sphere.h \
+  Runtime/Core/Public/Math/Matrix.h Runtime/Core/Public/Math/Rotator.h \
+  Runtime/Core/Public/Math/Matrix.inl \
+  Runtime/Core/Public/Math/Transform.h Runtime/Core/Public/Math/Quat.h \
+  Runtime/Core/Public/Math/ScalarRegister.h \
+  Runtime/Core/Public/Math/TransformNonVectorized.h \
+  Runtime/Core/Public/Math/TransformVectorized.h \
+  Runtime/Core/Public/Math/UnrealMathSSE.h \
+  Runtime/Core/Public/Math/CapsuleShape.h \
+  Runtime/Core/Public/Math/RangeBound.h \
+  Runtime/Core/Public/Misc/AutomationEvent.h \
+  Runtime/Core/Public/Math/Range.h Runtime/Core/Public/Math/RangeSet.h \
+  Runtime/Core/Public/Math/Box.h Runtime/Core/Public/Math/Box2D.h \
+  Runtime/Core/Public/Math/BoxSphereBounds.h \
+  Runtime/Core/Public/Math/OrientedBox.h \
+  Runtime/Core/Public/Math/RotationTranslationMatrix.h \
+  Runtime/Core/Public/Math/RotationAboutPointMatrix.h \
+  Runtime/Core/Public/Math/ScaleRotationTranslationMatrix.h \
+  Runtime/Core/Public/Math/RotationMatrix.h \
+  Runtime/Core/Public/Math/QuatRotationTranslationMatrix.h \
+  Runtime/Core/Public/Math/PerspectiveMatrix.h \
+  Runtime/Core/Public/Math/OrthoMatrix.h \
+  Runtime/Core/Public/Math/TranslationMatrix.h \
+  Runtime/Core/Public/Math/InverseRotationMatrix.h \
+  Runtime/Core/Public/Math/ScaleMatrix.h \
+  Runtime/Core/Public/Math/MirrorMatrix.h \
+  Runtime/Core/Public/Math/ClipProjectionMatrix.h \
+  Runtime/Core/Public/Math/InterpCurvePoint.h \
+  Runtime/Core/Public/Math/InterpCurve.h \
+  Runtime/Core/Public/Algo/MinElement.h \
+  Runtime/Core/Public/Algo/Impl/RangePointerType.h \
+  Runtime/Core/Public/Math/CurveEdInterface.h \
+  Runtime/Core/Public/Math/Float16Color.h \
+  Runtime/Core/Public/Math/Vector2DHalf.h \
+  Runtime/Core/Public/Math/ConvexHull2d.h \
+  Runtime/Core/Public/Math/UnrealMath.h Runtime/Core/Public/Math/Ray.h \
+  Runtime/Projects/Public/PluginDescriptor.h \
+  Runtime/Projects/Public/CustomBuildSteps.h \
+  Runtime/Json/Public/Serialization/JsonWriter.h \
+  Runtime/Json/Public/Serialization/JsonTypes.h \
+  Runtime/Json/Public/Policies/PrettyJsonPrintPolicy.h \
+  Runtime/Json/Public/Policies/JsonPrintPolicy.h \
+  Runtime/Core/Public/Serialization/MemoryWriter.h \
+  Runtime/Core/Public/Serialization/MemoryArchive.h \
+  Runtime/Projects/Public/LocalizationDescriptor.h \
+  Runtime/Projects/Public/ModuleDescriptor.h \
+  Runtime/Projects/Public/PluginDisallowedDescriptor.h \
+  Runtime/Projects/Public/PluginReferenceDescriptor.h \
+  Runtime/Projects/Public/VerseScope.h \
+  Runtime/Core/Public/Containers/VersePathFwd.h \
+  Runtime/Core/Public/Misc/FileHelper.h \
+  Runtime/Core/Public/Modules/ModuleManager.h \
+  Runtime/Core/Public/Misc/CoreMisc.h \
+  Runtime/Core/Public/HAL/ThreadSingleton.h \
+  Runtime/Core/Public/HAL/TlsAutoCleanup.h \
+  Runtime/RenderCore/Public/ShaderCore.h \
+  Runtime/Core/Public/Compression/OodleDataCompression.h \
+  Runtime/Core/Public/Memory/CompositeBuffer.h \
+  Runtime/Core/Public/Memory/MemoryFwd.h \
+  Runtime/Core/Public/Memory/MemoryView.h \
+  Runtime/Core/Public/Memory/SharedBuffer.h \
+  Runtime/Core/Public/Misc/CoreStats.h Runtime/Core/Public/Stats/Stats.h \
+  Runtime/Core/Public/HAL/PlatformTime.h \
+  Runtime/Core/Public/Mac/MacPlatformTime.h \
+  Runtime/Core/Public/Apple/ApplePlatformTime.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformTime.h \
+  Runtime/Core/Public/Stats/StatsCommon.h \
+  Runtime/Core/Public/Stats/Stats2.h \
+  Runtime/Core/Public/Containers/ChunkedArray.h \
+  Runtime/Core/Public/Containers/IndirectArray.h \
+  Runtime/Core/Public/Containers/LockFreeList.h \
+  Runtime/Core/Public/HAL/PlatformProcess.h \
+  Runtime/Core/Public/Mac/MacPlatformProcess.h \
+  Runtime/Core/Public/Apple/ApplePlatformProcess.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformProcess.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformAffinity.h \
+  Runtime/Core/Public/Misc/NoopCounter.h \
+  Runtime/Core/Public/HAL/LowLevelMemTracker.h \
+  Runtime/Core/Public/HAL/LowLevelMemTrackerDefines.h \
+  Runtime/Core/Public/ProfilingDebugging/TagTrace.h \
+  Runtime/TraceLog/Public/Trace/Detail/LogScope.h \
+  Runtime/TraceLog/Public/Trace/Detail/Writer.inl \
+  Runtime/Core/Public/ProfilingDebugging/MiscTrace.h \
+  Runtime/Core/Public/Stats/StatsTrace.h \
+  Runtime/Core/Public/Misc/Paths.h Runtime/Core/Public/Misc/SecureHash.h \
+  Runtime/Core/Public/Serialization/BufferReader.h \
+  Runtime/Core/Public/String/BytesToHex.h \
+  Runtime/Core/Public/String/HexToBytes.h \
+  Runtime/Core/Public/PixelFormat.h Runtime/RHI/Public/RHIDefinitions.h \
+  Runtime/RHI/Public/GpuProfilerTrace.h \
+  Runtime/Core/Public/ProfilingDebugging/CsvProfilerConfig.h \
+  Runtime/RHI/Public/RHIShaderBindingLayout.h \
+  Runtime/Core/Public/Containers/StaticArray.h \
+  Runtime/RenderCore/Public/ShaderParameterMetadata.h \
+  Runtime/Core/Public/Containers/List.h Runtime/RHI/Public/RHI.h \
+  Runtime/RHI/Public/RHIShaderPlatform.h \
+  Runtime/RHI/Public/RHIFeatureLevel.h Runtime/RHI/Public/RHIAccess.h \
+  Runtime/RHI/Public/RHIGlobals.h Runtime/RHI/Public/MultiGPU.h \
+  Runtime/RHI/Public/RHIResources.h Runtime/RHI/Public/RHIFwd.h \
+  Runtime/RHI/Public/RHIImmutableSamplerState.h \
+  Runtime/RHI/Public/RHITransition.h Runtime/RHI/Public/RHIPipeline.h \
+  Runtime/Core/Public/Misc/EnumRange.h \
+  Runtime/RHI/Public/RHIValidationCommon.h \
+  Runtime/Core/Public/Experimental/ConcurrentLinearAllocator.h \
+  Runtime/Core/Public/HAL/MallocAnsi.h \
+  Runtime/Core/Public/Containers/LockFreeFixedSizeAllocator.h \
+  Runtime/Core/Public/Misc/MemStack.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/sanitizer/asan_interface.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/sanitizer/common_interface_defs.h \
+  Runtime/RHI/Public/RHIStrings.h Runtime/RHI/Public/RHIBreadcrumbs.h \
+  Runtime/Core/Public/ProfilingDebugging/CsvProfiler.h \
+  Runtime/Core/Public/Async/Future.h Runtime/Core/Public/HAL/Event.h \
+  Runtime/Core/Public/Containers/Queue.h \
+  Runtime/Core/Public/ProfilingDebugging/CsvProfilerTrace.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformCrashContext.h \
+  Runtime/RHI/Public/DynamicRHI.h Runtime/RHI/Public/RHIContext.h \
+  Runtime/RHI/Public/RHIShaderParameters.h \
+  Runtime/RHI/Public/RHIResourceCollection.h \
+  Runtime/RHI/Public/RHITextureReference.h \
+  Runtime/RHI/Public/GPUProfiler.h Runtime/RHI/Public/RHIShaderLibrary.h \
+  Runtime/Core/Public/Misc/CoreDelegates.h \
+  Runtime/Core/Public/HAL/PlatformFile.h \
+  Runtime/Core/Public/Mac/MacPlatformFile.h \
+  Runtime/Core/Public/Apple/ApplePlatformFile.h \
+  Runtime/Core/Public/Misc/AES.h \
+  Runtime/Core/Public/Async/TaskGraphInterfaces.h \
+  Runtime/Core/Public/HAL/IConsoleManager.h \
+  Runtime/Core/Public/Misc/AccessDetection.h \
+  Runtime/Core/Public/Features/IModularFeature.h \
+  Runtime/Core/Public/Misc/Timeout.h \
+  Runtime/Core/Public/ProfilingDebugging/MetadataTrace.h \
+  Runtime/Core/Public/ProfilingDebugging/StringsTrace.h \
+  Runtime/TraceLog/Public/Trace/Trace.inl \
+  Runtime/TraceLog/Public/Trace/Detail/EventNode.h \
+  Runtime/TraceLog/Public/Trace/Detail/Field.h \
+  Runtime/TraceLog/Public/Trace/Detail/Atomic.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocol.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol0.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol1.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol2.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol3.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol4.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol5.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol6.h \
+  Runtime/TraceLog/Public/Trace/Detail/Protocols/Protocol7.h \
+  Runtime/TraceLog/Public/Trace/Detail/Important/ImportantLogScope.inl \
+  Runtime/TraceLog/Public/Trace/Detail/Important/ImportantLogScope.h \
+  Runtime/TraceLog/Public/Trace/Detail/Important/SharedBuffer.h \
+  Runtime/TraceLog/Public/Trace/Detail/LogScope.inl \
+  Runtime/Core/Public/Async/Fundamental/Task.h \
+  Runtime/Core/Public/Async/Fundamental/TaskDelegate.h \
+  Runtime/Core/Public/Misc/ScopeExit.h \
+  Runtime/Core/Public/Async/TaskTrace.h \
+  Runtime/Core/Public/Tasks/TaskPrivate.h \
+  Runtime/Core/Public/Async/EventCount.h \
+  Runtime/Core/Public/Async/ParkingLot.h \
+  Runtime/Core/Public/Misc/MonotonicTime.h \
+  Runtime/Core/Public/Async/Fundamental/Scheduler.h \
+  Runtime/Core/Public/Async/Fundamental/TaskShared.h \
+  Runtime/Core/Public/Async/Fundamental/WaitingQueue.h \
+  Runtime/Core/Public/HAL/PlatformAffinity.h \
+  Runtime/Core/Public/Mac/MacPlatformAffinity.h \
+  Runtime/Core/Public/Apple/ApplePlatformAffinity.h \
+  Runtime/Core/Public/HAL/Thread.h \
+  Runtime/Core/Public/Async/Fundamental/LocalQueue.h \
+  Runtime/Core/Public/Math/RandomStream.h \
+  Runtime/Core/Public/Experimental/Containers/FAAArrayQueue.h \
+  Runtime/Core/Public/Experimental/Containers/HazardPointer.h \
+  Runtime/Core/Public/Async/Mutex.h Runtime/Core/Public/Async/LockTags.h \
+  Runtime/Core/Public/Async/UniqueLock.h \
+  Runtime/Core/Public/Async/InheritedContext.h \
+  Runtime/Core/Public/Serialization/MemoryHasher.h \
+  Runtime/Core/Public/Hash/Blake3.h \
+  Runtime/Core/Public/Serialization/MemoryImage.h \
+  Runtime/Core/Public/Containers/HashTable.h \
+  Runtime/Core/Public/Templates/PimplPtr.h \
+  Runtime/RenderCore/Public/UniformBuffer.h \
+  Runtime/RenderCore/Public/ShaderParameterMacros.h \
+  Runtime/RenderCore/Public/ShaderParameterStructDeclaration.h \
+  Runtime/RenderCore/Public/RenderGraphAllocator.h \
+  Runtime/RHI/Public/RHICommandList.h Runtime/Core/Public/Misc/App.h \
+  Runtime/Core/Public/Misc/CommandLine.h \
+  Runtime/Core/Public/Misc/FrameRate.h \
+  Runtime/Core/Public/Misc/ExpressionParserTypes.h \
+  Runtime/Core/Public/Misc/ExpressionParserTypes.inl \
+  Runtime/Core/Public/Misc/FrameTime.h \
+  Runtime/Core/Public/Misc/QualifiedFrameTime.h \
+  Runtime/Core/Public/Misc/Timecode.h Runtime/RHI/Public/RHIStats.h \
+  Runtime/RHI/Public/RHIResourceReplace.h Runtime/RHI/Public/RHITypes.h \
+  Runtime/RHI/Public/RHICommandList.inl \
+  Runtime/RenderCore/Public/RenderGraphTextureSubresource.h \
+  Runtime/RenderCore/Public/RenderingThread.h \
+  Runtime/Core/Public/Tasks/Pipe.h Runtime/Core/Public/Tasks/Task.h \
+  Runtime/Core/Public/Async/ManualResetEvent.h \
+  Runtime/RenderCore/Public/RenderResource.h \
+  Runtime/RenderCore/Public/RenderTimer.h \
+  Runtime/Core/Public/Templates/IsArrayOrRefOfType.h \
+  Runtime/RenderCore/Internal/ShaderCompilerDefinitions.h
