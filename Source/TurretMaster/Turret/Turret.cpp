@@ -58,21 +58,23 @@ void ATurret::Tick(float DeltaTime)
 		DistanceToProjectile = FVector::ZeroVector;
 	}
 	DrawDebugLine(GetWorld(), GetActorLocation(), GetActorLocation() + DistanceToRangeLimit, FColor::Green, true);
-	DrawDebugLine(GetWorld(), GetActorLocation(), GetActorLocation() + DistanceToProjectile, FColor::Red, true);
+	DrawDebugLine(GetWorld(), GetActorLocation(), GetActorLocation() + DistanceToProjectile, FColor::Red, false);
+	
 	// (TODO) Calculate impact point
 
 	// (TODO) Set yaw and pitch
 	// x = roll; y = pitch; z = yaw
 	// estimate location at X
-	float PitchAngle = FMath::Acos(FVector::DotProduct(DistanceToProjectile, DistanceToRangeLimit)/DistanceToProjectile.Size() * DistanceToRangeLimit.Size());
-	float YawAngle = FMath::Asin(DistanceToProjectile.Z/DistanceToProjectile.X);
+	//float PitchAngle = FMath::Acos(FVector::DotProduct(DistanceToProjectile, DistanceToRangeLimit)/DistanceToProjectile.Size() * DistanceToRangeLimit.Size());
+	//float YawAngle = FMath::Asin(DistanceToProjectile.Z/DistanceToProjectile.X);
 	
-	SetPitch(PitchAngle);
-	SetYaw(YawAngle);
+	//SetPitch(PitchAngle);
+	//SetYaw(YawAngle);
 
 	// (TODO) Check muzzle is pointed at impact point
 
 	// (TODO) If it is, FIRE!
+
 }
 
 void ATurret::Fire() const

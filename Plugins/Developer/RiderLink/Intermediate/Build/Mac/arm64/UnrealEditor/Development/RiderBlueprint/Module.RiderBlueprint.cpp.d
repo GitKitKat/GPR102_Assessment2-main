@@ -1,11 +1,9 @@
 /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp.o: \
   /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderBlueprint/Module.RiderBlueprint.cpp \
   /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderBlueprint/Definitions.h \
-  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderBlueprint/PerModuleInline.gen.cpp \
-  Runtime/Core/Public/HAL/PerModuleInline.inl \
-  Runtime/Core/Public/CoreGlobals.h \
-  Runtime/Core/Public/Containers/UnrealString.h \
-  Runtime/Core/Public/Containers/UnrealStringIncludes.h.inl \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderBlueprint/Private/BlueprintProvider.cpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderBlueprint/Public/BlueprintProvider.hpp \
+  Runtime/Core/Public/Delegates/Delegate.h \
   Runtime/Core/Public/CoreTypes.h Runtime/Core/Public/HAL/Platform.h \
   Runtime/Core/Public/Misc/Build.h \
   Runtime/Core/Public/Misc/LargeWorldCoordinates.h \
@@ -34,11 +32,11 @@
   Runtime/Core/Public/ProfilingDebugging/UMemoryDefines.h \
   Runtime/Core/Public/Misc/CoreMiscDefines.h \
   Runtime/Core/Public/Misc/CoreDefines.h \
-  Runtime/Core/Public/Misc/VarArgs.h \
-  Runtime/Core/Public/Misc/OutputDevice.h Runtime/Core/Public/CoreFwd.h \
-  Runtime/Core/Public/Containers/ContainersFwd.h \
-  Runtime/Core/Public/Traits/IsContiguousContainer.h \
-  Runtime/Core/Public/Misc/StaticAssertCompleteType.h \
+  Runtime/Core/Public/Misc/AssertionMacros.h \
+  Runtime/Core/Public/HAL/PlatformMisc.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformMisc.h \
+  Runtime/Core/Public/Containers/StringFwd.h \
+  Runtime/Core/Public/Traits/ElementType.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler \
@@ -52,12 +50,6 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/version \
-  Runtime/Core/Public/Math/MathFwd.h \
-  Runtime/Core/Public/UObject/UObjectHierarchyFwd.h \
-  Runtime/Core/Public/Logging/LogVerbosity.h \
-  Runtime/Core/Public/Templates/IsArrayOrRefOfTypeByPredicate.h \
-  Runtime/Core/Public/Templates/IsValidVariadicFunctionArg.h \
-  Runtime/Core/Public/Templates/IsEnum.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/hash.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_const.h \
@@ -203,13 +195,12 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/invoke.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_identity.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/unwrap_ref.h \
-  Runtime/Core/Public/Traits/IsCharEncodingCompatibleWith.h \
-  Runtime/Core/Public/Traits/IsCharType.h \
-  Runtime/Core/Public/Misc/AssertionMacros.h \
-  Runtime/Core/Public/HAL/PlatformMisc.h \
-  Runtime/Core/Public/GenericPlatform/GenericPlatformMisc.h \
-  Runtime/Core/Public/Containers/StringFwd.h \
-  Runtime/Core/Public/Traits/ElementType.h \
+  Runtime/Core/Public/Traits/IsContiguousContainer.h \
+  Runtime/Core/Public/Misc/StaticAssertCompleteType.h \
+  Runtime/Core/Public/CoreFwd.h \
+  Runtime/Core/Public/Containers/ContainersFwd.h \
+  Runtime/Core/Public/Math/MathFwd.h \
+  Runtime/Core/Public/UObject/UObjectHierarchyFwd.h \
   Runtime/Core/Public/HAL/PlatformCrt.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/exception.h \
@@ -1649,6 +1640,12 @@
   Runtime/Core/Public/Misc/Launder.h \
   Runtime/TraceLog/Public/Trace/Detail/Channel.inl \
   Runtime/Core/Public/Templates/EnableIf.h \
+  Runtime/Core/Public/Templates/IsArrayOrRefOfTypeByPredicate.h \
+  Runtime/Core/Public/Templates/IsValidVariadicFunctionArg.h \
+  Runtime/Core/Public/Templates/IsEnum.h \
+  Runtime/Core/Public/Traits/IsCharEncodingCompatibleWith.h \
+  Runtime/Core/Public/Traits/IsCharType.h \
+  Runtime/Core/Public/Misc/VarArgs.h \
   Runtime/Core/Public/String/FormatStringSan.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/aliases.h \
@@ -1706,6 +1703,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/compare_weak_order_fallback.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/is_eq.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/synth_three_way.h \
+  Runtime/Core/Public/UObject/NameTypes.h \
   Runtime/Core/Public/HAL/UnrealMemory.h \
   Runtime/Core/Public/GenericPlatform/GenericPlatformMemory.h \
   Runtime/Core/Public/HAL/PlatformString.h \
@@ -1717,6 +1715,8 @@
   Runtime/Core/Public/Traits/IsCharEncodingSimplyConvertibleTo.h \
   Runtime/Core/Public/Traits/IsFixedWidthCharEncoding.h \
   Runtime/Core/Public/Misc/Char.h Runtime/Core/Public/Traits/IntType.h \
+  Runtime/Core/Public/Misc/OutputDevice.h \
+  Runtime/Core/Public/Logging/LogVerbosity.h \
   Runtime/Core/Public/HAL/MemoryBase.h Runtime/Core/Public/Misc/Exec.h \
   Runtime/Core/Public/Templates/Atomic.h \
   Runtime/Core/Public/HAL/ThreadSafeCounter.h \
@@ -1732,9 +1732,8 @@
   Runtime/Core/Public/Apple/ApplePlatformMemory.h \
   Runtime/Core/Public/ProfilingDebugging/MemoryTrace.h \
   Runtime/Core/Public/Templates/IsPointer.h \
-  Runtime/Core/Public/Templates/IsArithmetic.h \
-  Runtime/Core/Public/Templates/IsArray.h \
   Runtime/Core/Public/Templates/UnrealTypeTraits.h \
+  Runtime/Core/Public/Templates/IsArithmetic.h \
   Runtime/Core/Public/Templates/Models.h \
   Runtime/Core/Public/Templates/Identity.h \
   Runtime/Core/Public/Templates/IsPODType.h \
@@ -1746,6 +1745,9 @@
   Runtime/Core/Public/Templates/RemoveReference.h \
   Runtime/Core/Public/Templates/TypeCompatibleBytes.h \
   Runtime/Core/Public/Traits/UseBitwiseSwap.h \
+  Runtime/Core/Public/Containers/UnrealString.h \
+  Runtime/Core/Public/Containers/UnrealStringIncludes.h.inl \
+  Runtime/Core/Public/Templates/IsArray.h \
   Runtime/Core/Public/Containers/Array.h \
   Runtime/Core/Public/Misc/IntrusiveUnsetOptionalState.h \
   Runtime/Core/Public/Misc/OptionalFwd.h \
@@ -2226,13 +2228,6 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/has_single_bit.h \
   Runtime/Core/Public/Containers/UnrealString.h.inl \
   Runtime/Core/Public/Misc/StringFormatArg.h \
-  Runtime/Core/Public/HAL/PlatformTLS.h \
-  Runtime/Core/Public/GenericPlatform/GenericPlatformTLS.h \
-  Runtime/Core/Public/Mac/MacPlatformTLS.h \
-  Runtime/Core/Public/Apple/ApplePlatformTLS.h \
-  Runtime/Core/Public/Logging/LogMacros.h \
-  Runtime/Core/Public/Logging/LogCategory.h \
-  Runtime/Core/Public/UObject/NameTypes.h \
   Runtime/Core/Public/HAL/CriticalSection.h \
   Runtime/Core/Public/Mac/MacCriticalSection.h \
   Runtime/Core/Public/HAL/PThreadCriticalSection.h \
@@ -2248,14 +2243,6 @@
   Runtime/Core/Public/Containers/ArrayView.h \
   Runtime/Core/Public/Templates/IsConst.h \
   Runtime/Core/Public/Templates/PointerIsConvertibleFromTo.h \
-  Runtime/Core/Public/Logging/LogScopedCategoryAndVerbosityOverride.h \
-  Runtime/Core/Public/Logging/LogTrace.h \
-  Runtime/Core/Public/ProfilingDebugging/FormatArgsTrace.h \
-  Runtime/Core/Public/Modules/Boilerplate/ModuleBoilerplate.h \
-  Runtime/Core/Public/Modules/VisualizerDebuggingState.h \
-  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderBlueprint/Private/BlueprintProvider.cpp \
-  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderBlueprint/Public/BlueprintProvider.hpp \
-  Runtime/Core/Public/Delegates/Delegate.h \
   Runtime/Core/Public/Templates/SharedPointer.h \
   Runtime/Core/Public/Containers/Map.h \
   Runtime/Core/Public/Algo/Reverse.h \
@@ -2286,6 +2273,16 @@
   Runtime/Core/Public/Templates/RetainedRef.h \
   Runtime/Core/Public/Templates/Tuple.h \
   Runtime/Core/Public/Delegates/IntegerSequence.h \
+  Runtime/Core/Public/CoreGlobals.h \
+  Runtime/Core/Public/HAL/PlatformTLS.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformTLS.h \
+  Runtime/Core/Public/Mac/MacPlatformTLS.h \
+  Runtime/Core/Public/Apple/ApplePlatformTLS.h \
+  Runtime/Core/Public/Logging/LogMacros.h \
+  Runtime/Core/Public/Logging/LogCategory.h \
+  Runtime/Core/Public/Logging/LogScopedCategoryAndVerbosityOverride.h \
+  Runtime/Core/Public/Logging/LogTrace.h \
+  Runtime/Core/Public/ProfilingDebugging/FormatArgsTrace.h \
   Runtime/Core/Public/Templates/SharedPointerInternals.h \
   Runtime/Core/Public/Templates/SharedPointerFwd.h \
   Runtime/Core/Public/Templates/SharedPointerTesting.inl \
@@ -2733,6 +2730,8 @@
   Editor/BlueprintGraph/Classes/BlueprintNodeBinder.h \
   Runtime/CoreUObject/Public/UObject/WeakFieldPtr.h \
   Runtime/Core/Public/Modules/ModuleManager.h \
+  Runtime/Core/Public/Modules/Boilerplate/ModuleBoilerplate.h \
+  Runtime/Core/Public/Modules/VisualizerDebuggingState.h \
   Editor/BlueprintGraph/Public/BlueprintNodeSignature.h \
   Runtime/CoreUObject/Public/UObject/LinkerLoad.h \
   Runtime/CoreUObject/Public/UObject/Linker.h \

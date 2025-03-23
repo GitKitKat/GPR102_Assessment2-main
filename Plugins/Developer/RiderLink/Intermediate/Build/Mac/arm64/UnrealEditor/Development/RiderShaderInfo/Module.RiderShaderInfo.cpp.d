@@ -1,11 +1,9 @@
 /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderShaderInfo/Module.RiderShaderInfo.cpp.o: \
   /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderShaderInfo/Module.RiderShaderInfo.cpp \
   /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderShaderInfo/Definitions.h \
-  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderShaderInfo/PerModuleInline.gen.cpp \
-  Runtime/Core/Public/HAL/PerModuleInline.inl \
-  Runtime/Core/Public/CoreGlobals.h \
-  Runtime/Core/Public/Containers/UnrealString.h \
-  Runtime/Core/Public/Containers/UnrealStringIncludes.h.inl \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.cpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.h \
+  Runtime/Core/Public/Modules/ModuleInterface.h \
   Runtime/Core/Public/CoreTypes.h Runtime/Core/Public/HAL/Platform.h \
   Runtime/Core/Public/Misc/Build.h \
   Runtime/Core/Public/Misc/LargeWorldCoordinates.h \
@@ -34,6 +32,9 @@
   Runtime/Core/Public/ProfilingDebugging/UMemoryDefines.h \
   Runtime/Core/Public/Misc/CoreMiscDefines.h \
   Runtime/Core/Public/Misc/CoreDefines.h \
+  Runtime/Core/Public/HAL/FileManager.h \
+  Runtime/Core/Public/Containers/UnrealString.h \
+  Runtime/Core/Public/Containers/UnrealStringIncludes.h.inl \
   Runtime/Core/Public/Misc/VarArgs.h \
   Runtime/Core/Public/Misc/OutputDevice.h Runtime/Core/Public/CoreFwd.h \
   Runtime/Core/Public/Containers/ContainersFwd.h \
@@ -2226,38 +2227,9 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/has_single_bit.h \
   Runtime/Core/Public/Containers/UnrealString.h.inl \
   Runtime/Core/Public/Misc/StringFormatArg.h \
-  Runtime/Core/Public/HAL/PlatformTLS.h \
-  Runtime/Core/Public/GenericPlatform/GenericPlatformTLS.h \
-  Runtime/Core/Public/Mac/MacPlatformTLS.h \
-  Runtime/Core/Public/Apple/ApplePlatformTLS.h \
-  Runtime/Core/Public/Logging/LogMacros.h \
-  Runtime/Core/Public/Logging/LogCategory.h \
-  Runtime/Core/Public/UObject/NameTypes.h \
-  Runtime/Core/Public/HAL/CriticalSection.h \
-  Runtime/Core/Public/Mac/MacCriticalSection.h \
-  Runtime/Core/Public/HAL/PThreadCriticalSection.h \
-  Runtime/Core/Public/HAL/PThreadRWLock.h \
+  Runtime/Core/Public/Misc/DateTime.h \
   Runtime/Core/Public/Misc/Timespan.h \
   Runtime/Core/Public/Math/Interval.h \
-  Runtime/Core/Public/Containers/StringConv.h \
-  Runtime/Core/Public/UObject/UnrealNames.h \
-  Runtime/Core/Public/UObject/UnrealNames.inl \
-  Runtime/Core/Public/Misc/StringBuilder.h \
-  Runtime/Core/Public/Containers/StringView.h \
-  Runtime/Core/Public/String/Find.h \
-  Runtime/Core/Public/Containers/ArrayView.h \
-  Runtime/Core/Public/Templates/IsConst.h \
-  Runtime/Core/Public/Templates/PointerIsConvertibleFromTo.h \
-  Runtime/Core/Public/Logging/LogScopedCategoryAndVerbosityOverride.h \
-  Runtime/Core/Public/Logging/LogTrace.h \
-  Runtime/Core/Public/ProfilingDebugging/FormatArgsTrace.h \
-  Runtime/Core/Public/Modules/Boilerplate/ModuleBoilerplate.h \
-  Runtime/Core/Public/Modules/VisualizerDebuggingState.h \
-  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.cpp \
-  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.h \
-  Runtime/Core/Public/Modules/ModuleInterface.h \
-  Runtime/Core/Public/HAL/FileManager.h \
-  Runtime/Core/Public/Misc/DateTime.h \
   Runtime/Core/Public/Serialization/StructuredArchive.h \
   Runtime/Core/Public/Serialization/Formatters/BinaryArchiveFormatter.h \
   Runtime/Core/Public/Serialization/StructuredArchiveFormatter.h \
@@ -2274,6 +2246,11 @@
   Runtime/Core/Public/Templates/RemoveExtent.h \
   Runtime/Core/Public/Serialization/StructuredArchiveDefines.h \
   Runtime/Core/Public/GenericPlatform/GenericPlatformFile.h \
+  Runtime/Core/Public/Containers/StringView.h \
+  Runtime/Core/Public/String/Find.h \
+  Runtime/Core/Public/Containers/ArrayView.h \
+  Runtime/Core/Public/Templates/IsConst.h \
+  Runtime/Core/Public/Templates/PointerIsConvertibleFromTo.h \
   Runtime/Core/Public/Templates/Function.h \
   Runtime/Core/Public/Templates/FunctionFwd.h \
   Runtime/Core/Public/Templates/IsInvocable.h \
@@ -2296,16 +2273,35 @@
   Runtime/Core/Public/Containers/ScriptArray.h \
   Runtime/Core/Public/Containers/BitArray.h \
   Runtime/Core/Public/Templates/RetainedRef.h \
+  Runtime/Core/Public/HAL/CriticalSection.h \
+  Runtime/Core/Public/Mac/MacCriticalSection.h \
+  Runtime/Core/Public/HAL/PThreadCriticalSection.h \
+  Runtime/Core/Public/HAL/PThreadRWLock.h \
+  Runtime/Core/Public/UObject/NameTypes.h \
+  Runtime/Core/Public/Containers/StringConv.h \
+  Runtime/Core/Public/UObject/UnrealNames.h \
+  Runtime/Core/Public/UObject/UnrealNames.inl \
+  Runtime/Core/Public/Misc/StringBuilder.h \
   Runtime/Core/Public/Misc/FrameNumber.h \
   Runtime/Core/Public/Misc/Parse.h Runtime/Core/Public/Math/Color.h \
   Runtime/Core/Public/Math/ColorList.h \
   Runtime/Core/Public/Math/IntPoint.h \
   Runtime/Core/Public/Misc/LargeWorldCoordinatesSerializer.h \
   Runtime/Core/Public/Math/IntVector.h \
+  Runtime/Core/Public/Logging/LogCategory.h \
+  Runtime/Core/Public/Logging/LogMacros.h \
+  Runtime/Core/Public/Logging/LogScopedCategoryAndVerbosityOverride.h \
+  Runtime/Core/Public/Logging/LogTrace.h \
+  Runtime/Core/Public/ProfilingDebugging/FormatArgsTrace.h \
   Runtime/Core/Public/Math/Vector2D.h \
   Runtime/Core/Public/Misc/NetworkVersion.h \
   Runtime/Core/Public/Delegates/Delegate.h \
   Runtime/Core/Public/Templates/SharedPointer.h \
+  Runtime/Core/Public/CoreGlobals.h \
+  Runtime/Core/Public/HAL/PlatformTLS.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformTLS.h \
+  Runtime/Core/Public/Mac/MacPlatformTLS.h \
+  Runtime/Core/Public/Apple/ApplePlatformTLS.h \
   Runtime/Core/Public/Templates/SharedPointerInternals.h \
   Runtime/Core/Public/Templates/SharedPointerFwd.h \
   Runtime/Core/Public/Templates/SharedPointerTesting.inl \
@@ -2414,6 +2410,8 @@
   Runtime/Core/Public/Misc/CoreMisc.h \
   Runtime/Core/Public/HAL/ThreadSingleton.h \
   Runtime/Core/Public/HAL/TlsAutoCleanup.h \
+  Runtime/Core/Public/Modules/Boilerplate/ModuleBoilerplate.h \
+  Runtime/Core/Public/Modules/VisualizerDebuggingState.h \
   Runtime/RenderCore/Public/ShaderCore.h \
   Runtime/Core/Public/Compression/OodleDataCompression.h \
   Runtime/Core/Public/Memory/CompositeBuffer.h \

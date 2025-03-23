@@ -1,13 +1,10 @@
 /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLC/Module.RiderLC.cpp.o: \
   /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLC/Module.RiderLC.cpp \
   /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLC/Definitions.h \
-  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Intermediate/Build/Mac/arm64/UnrealEditor/Development/RiderLC/PerModuleInline.gen.cpp \
-  Runtime/Core/Public/HAL/PerModuleInline.inl \
-  Runtime/Core/Public/CoreGlobals.h \
-  Runtime/Core/Public/Containers/UnrealString.h \
-  Runtime/Core/Public/Containers/UnrealStringIncludes.h.inl \
-  Runtime/Core/Public/CoreTypes.h Runtime/Core/Public/HAL/Platform.h \
-  Runtime/Core/Public/Misc/Build.h \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLC/Private/RiderLC.cpp \
+  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLC/Private/RiderLC.hpp \
+  Runtime/Core/Public/CoreMinimal.h Runtime/Core/Public/CoreTypes.h \
+  Runtime/Core/Public/HAL/Platform.h Runtime/Core/Public/Misc/Build.h \
   Runtime/Core/Public/Misc/LargeWorldCoordinates.h \
   Runtime/Core/Public/HAL/PreprocessorHelpers.h \
   Runtime/Core/Public/Mac/MacPlatformCompilerPreSetup.h \
@@ -33,9 +30,7 @@
   Runtime/Core/Public/Mac/MacPlatformCompilerSetup.h \
   Runtime/Core/Public/ProfilingDebugging/UMemoryDefines.h \
   Runtime/Core/Public/Misc/CoreMiscDefines.h \
-  Runtime/Core/Public/Misc/CoreDefines.h \
-  Runtime/Core/Public/Misc/VarArgs.h \
-  Runtime/Core/Public/Misc/OutputDevice.h Runtime/Core/Public/CoreFwd.h \
+  Runtime/Core/Public/Misc/CoreDefines.h Runtime/Core/Public/CoreFwd.h \
   Runtime/Core/Public/Containers/ContainersFwd.h \
   Runtime/Core/Public/Traits/IsContiguousContainer.h \
   Runtime/Core/Public/Misc/StaticAssertCompleteType.h \
@@ -54,7 +49,9 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/version \
   Runtime/Core/Public/Math/MathFwd.h \
   Runtime/Core/Public/UObject/UObjectHierarchyFwd.h \
+  Runtime/Core/Public/Misc/VarArgs.h \
   Runtime/Core/Public/Logging/LogVerbosity.h \
+  Runtime/Core/Public/Misc/OutputDevice.h \
   Runtime/Core/Public/Templates/IsArrayOrRefOfTypeByPredicate.h \
   Runtime/Core/Public/Templates/IsValidVariadicFunctionArg.h \
   Runtime/Core/Public/Templates/IsEnum.h \
@@ -205,11 +202,6 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/unwrap_ref.h \
   Runtime/Core/Public/Traits/IsCharEncodingCompatibleWith.h \
   Runtime/Core/Public/Traits/IsCharType.h \
-  Runtime/Core/Public/Misc/AssertionMacros.h \
-  Runtime/Core/Public/HAL/PlatformMisc.h \
-  Runtime/Core/Public/GenericPlatform/GenericPlatformMisc.h \
-  Runtime/Core/Public/Containers/StringFwd.h \
-  Runtime/Core/Public/Traits/ElementType.h \
   Runtime/Core/Public/HAL/PlatformCrt.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/exception.h \
@@ -331,6 +323,10 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_strings.h \
+  Runtime/Core/Public/HAL/PlatformMisc.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformMisc.h \
+  Runtime/Core/Public/Containers/StringFwd.h \
+  Runtime/Core/Public/Traits/ElementType.h \
   Runtime/Core/Public/Math/NumericLimits.h \
   Runtime/Core/Public/Misc/CompressionFlags.h \
   Runtime/Core/Public/Misc/EnumClassFlags.h \
@@ -1648,6 +1644,7 @@
   Runtime/TraceLog/Public/Trace/Detail/Trace.h \
   Runtime/Core/Public/Misc/Launder.h \
   Runtime/TraceLog/Public/Trace/Detail/Channel.inl \
+  Runtime/Core/Public/Misc/AssertionMacros.h \
   Runtime/Core/Public/Templates/EnableIf.h \
   Runtime/Core/Public/String/FormatStringSan.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
@@ -1706,7 +1703,8 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/compare_weak_order_fallback.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/is_eq.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/synth_three_way.h \
-  Runtime/Core/Public/HAL/UnrealMemory.h \
+  Runtime/Core/Public/Templates/IsPointer.h \
+  Runtime/Core/Public/HAL/PlatformMemory.h \
   Runtime/Core/Public/GenericPlatform/GenericPlatformMemory.h \
   Runtime/Core/Public/HAL/PlatformString.h \
   Runtime/Core/Public/Mac/MacPlatformString.h \
@@ -1717,7 +1715,9 @@
   Runtime/Core/Public/Traits/IsCharEncodingSimplyConvertibleTo.h \
   Runtime/Core/Public/Traits/IsFixedWidthCharEncoding.h \
   Runtime/Core/Public/Misc/Char.h Runtime/Core/Public/Traits/IntType.h \
-  Runtime/Core/Public/HAL/MemoryBase.h Runtime/Core/Public/Misc/Exec.h \
+  Runtime/Core/Public/Mac/MacPlatformMemory.h \
+  Runtime/Core/Public/Apple/ApplePlatformMemory.h \
+  Runtime/Core/Public/Misc/Exec.h Runtime/Core/Public/HAL/MemoryBase.h \
   Runtime/Core/Public/Templates/Atomic.h \
   Runtime/Core/Public/HAL/ThreadSafeCounter.h \
   Runtime/Core/Public/HAL/ThreadSafeCounter64.h \
@@ -1727,25 +1727,54 @@
   Runtime/Core/Public/Templates/IsTriviallyCopyConstructible.h \
   Runtime/Core/Public/Templates/IsTriviallyCopyAssignable.h \
   Runtime/Core/Public/Templates/IsTriviallyDestructible.h \
-  Runtime/Core/Public/HAL/PlatformMemory.h \
-  Runtime/Core/Public/Mac/MacPlatformMemory.h \
-  Runtime/Core/Public/Apple/ApplePlatformMemory.h \
+  Runtime/Core/Public/HAL/UnrealMemory.h \
   Runtime/Core/Public/ProfilingDebugging/MemoryTrace.h \
-  Runtime/Core/Public/Templates/IsPointer.h \
   Runtime/Core/Public/Templates/IsArithmetic.h \
-  Runtime/Core/Public/Templates/IsArray.h \
+  Runtime/Core/Public/Templates/IsPODType.h \
+  Runtime/Core/Public/Templates/IsUECoreType.h \
   Runtime/Core/Public/Templates/UnrealTypeTraits.h \
   Runtime/Core/Public/Templates/Models.h \
   Runtime/Core/Public/Templates/Identity.h \
-  Runtime/Core/Public/Templates/IsPODType.h \
-  Runtime/Core/Public/Templates/IsUECoreType.h \
   Runtime/Core/Public/Templates/Requires.h \
+  Runtime/Core/Public/Templates/RemoveReference.h \
+  Runtime/Core/Public/Templates/IntegralConstant.h \
+  Runtime/Core/Public/Templates/IsClass.h \
+  Runtime/Core/Public/Templates/TypeCompatibleBytes.h \
   Runtime/Core/Public/Templates/UnrealTemplate.h \
   Runtime/Core/Public/Templates/CopyQualifiersAndRefsFromTo.h \
   Runtime/Core/Public/Templates/CopyQualifiersFromTo.h \
-  Runtime/Core/Public/Templates/RemoveReference.h \
-  Runtime/Core/Public/Templates/TypeCompatibleBytes.h \
   Runtime/Core/Public/Traits/UseBitwiseSwap.h \
+  Runtime/Core/Public/HAL/PlatformMath.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformMath.h \
+  Runtime/Core/Public/Templates/Decay.h \
+  Runtime/Core/Public/Templates/IsFloatingPoint.h \
+  Runtime/Core/Public/Templates/ResolveTypeAmbiguity.h \
+  Runtime/Core/Public/Templates/IsSigned.h \
+  Runtime/Core/Public/Mac/MacPlatformMath.h \
+  Runtime/Core/Public/Clang/ClangPlatformMath.h \
+  Runtime/Core/Public/Templates/MemoryOps.h \
+  Runtime/Core/Public/Containers/ContainerAllocationPolicies.h \
+  Runtime/Core/Public/Containers/ContainerHelpers.h \
+  Runtime/Core/Public/Templates/IsPolymorphic.h \
+  Runtime/Core/Public/Templates/IsEnumClass.h \
+  Runtime/Core/Public/HAL/PlatformProperties.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformProperties.h \
+  Runtime/Core/Public/Mac/MacPlatformProperties.h \
+  Runtime/Core/Public/Misc/Compression.h \
+  Runtime/Core/Public/Containers/Map.h \
+  Runtime/Core/Public/Algo/Reverse.h \
+  Runtime/Core/Public/Containers/ContainerElementTypeCompatibility.h \
+  Runtime/Core/Public/Containers/Set.h \
+  Runtime/Core/Public/Templates/Sorting.h \
+  Runtime/Core/Public/Algo/BinarySearch.h \
+  Runtime/Core/Public/Templates/IdentityFunctor.h \
+  Runtime/Core/Public/Templates/Invoke.h \
+  Runtime/Core/Public/Traits/MemberFunctionPtrOuter.h \
+  Runtime/Core/Public/Templates/Less.h Runtime/Core/Public/Algo/Sort.h \
+  Runtime/Core/Public/Algo/IntroSort.h \
+  Runtime/Core/Public/Algo/Impl/BinaryHeap.h \
+  Runtime/Core/Public/Templates/ReversePredicate.h \
+  Runtime/Core/Public/Math/UnrealMathUtility.h \
   Runtime/Core/Public/Containers/Array.h \
   Runtime/Core/Public/Misc/IntrusiveUnsetOptionalState.h \
   Runtime/Core/Public/Misc/OptionalFwd.h \
@@ -1884,28 +1913,11 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/wrap_iter.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/concepts \
   Runtime/Core/Public/Containers/AllowShrinking.h \
-  Runtime/Core/Public/Containers/ContainerAllocationPolicies.h \
-  Runtime/Core/Public/Containers/ContainerHelpers.h \
-  Runtime/Core/Public/HAL/PlatformMath.h \
-  Runtime/Core/Public/GenericPlatform/GenericPlatformMath.h \
-  Runtime/Core/Public/Templates/Decay.h \
-  Runtime/Core/Public/Templates/IsFloatingPoint.h \
-  Runtime/Core/Public/Templates/ResolveTypeAmbiguity.h \
-  Runtime/Core/Public/Templates/IsSigned.h \
-  Runtime/Core/Public/Mac/MacPlatformMath.h \
-  Runtime/Core/Public/Clang/ClangPlatformMath.h \
-  Runtime/Core/Public/Templates/IsPolymorphic.h \
-  Runtime/Core/Public/Templates/MemoryOps.h \
-  Runtime/Core/Public/Containers/ContainerElementTypeCompatibility.h \
   Runtime/Core/Public/Serialization/Archive.h \
-  Runtime/Core/Public/HAL/PlatformProperties.h \
-  Runtime/Core/Public/GenericPlatform/GenericPlatformProperties.h \
-  Runtime/Core/Public/Mac/MacPlatformProperties.h \
   Runtime/Core/Public/Internationalization/TextNamespaceFwd.h \
   Runtime/Core/Public/Misc/EngineVersionBase.h \
   Runtime/Core/Public/Serialization/ArchiveCookData.h \
   Runtime/Core/Public/Serialization/ArchiveSavePackageData.h \
-  Runtime/Core/Public/Templates/IsEnumClass.h \
   Runtime/Core/Public/UObject/ObjectVersion.h \
   Runtime/Core/Public/Serialization/MemoryImageWriter.h \
   Runtime/Core/Public/Serialization/MemoryLayout.h \
@@ -1916,25 +1928,41 @@
   Runtime/Core/Public/Misc/Crc.h Runtime/Core/Public/Misc/CString.h \
   Runtime/Core/Public/Misc/DelayedAutoRegister.h \
   Runtime/Core/Public/Templates/IsAbstract.h \
-  Runtime/Core/Public/Algo/Heapify.h \
-  Runtime/Core/Public/Algo/Impl/BinaryHeap.h \
-  Runtime/Core/Public/Templates/Invoke.h \
-  Runtime/Core/Public/Traits/MemberFunctionPtrOuter.h \
-  Runtime/Core/Public/Templates/ReversePredicate.h \
-  Runtime/Core/Public/Templates/IdentityFunctor.h \
-  Runtime/Core/Public/Templates/Less.h \
-  Runtime/Core/Public/Algo/HeapSort.h Runtime/Core/Public/Algo/IsHeap.h \
+  Runtime/Core/Public/Algo/Heapify.h Runtime/Core/Public/Algo/HeapSort.h \
+  Runtime/Core/Public/Algo/IsHeap.h \
   Runtime/Core/Public/Algo/StableSort.h \
-  Runtime/Core/Public/Algo/BinarySearch.h \
   Runtime/Core/Public/Algo/Rotate.h \
   Runtime/Core/Public/Concepts/GetTypeHashable.h \
   Runtime/Core/Public/Templates/LosesQualifiersFromTo.h \
-  Runtime/Core/Public/Templates/Sorting.h \
-  Runtime/Core/Public/Algo/Sort.h Runtime/Core/Public/Algo/IntroSort.h \
-  Runtime/Core/Public/Math/UnrealMathUtility.h \
   Runtime/Core/Public/Templates/AlignmentTemplates.h \
   Runtime/Core/Public/Templates/IsConstructible.h \
   Runtime/Core/Public/Templates/MakeUnsigned.h \
+  Runtime/Core/Public/Misc/StructBuilder.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/Core/Public/Templates/FunctionFwd.h \
+  Runtime/Core/Public/Templates/IsInvocable.h \
+  Runtime/Core/Public/Templates/IsMemberPointer.h \
+  Runtime/Core/Public/Containers/SparseArray.h \
+  Runtime/Core/Public/Containers/ScriptArray.h \
+  Runtime/Core/Public/Containers/BitArray.h \
+  Runtime/Core/Public/Serialization/StructuredArchive.h \
+  Runtime/Core/Public/Serialization/Formatters/BinaryArchiveFormatter.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveFormatter.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveNameHelpers.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveAdapters.h \
+  Runtime/Core/Public/Concepts/Insertable.h \
+  Runtime/Core/Public/Serialization/ArchiveProxy.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveSlots.h \
+  Runtime/Core/Public/Misc/Optional.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveFwd.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveSlotBase.h \
+  Runtime/Core/Public/Templates/UniqueObj.h \
+  Runtime/Core/Public/Templates/UniquePtr.h \
+  Runtime/Core/Public/Templates/IsArray.h \
+  Runtime/Core/Public/Templates/RemoveExtent.h \
+  Runtime/Core/Public/Serialization/StructuredArchiveDefines.h \
+  Runtime/Core/Public/Containers/UnrealString.h \
+  Runtime/Core/Public/Containers/UnrealStringIncludes.h.inl \
   Runtime/Core/Public/AutoRTFM/AutoRTFM.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
@@ -2226,19 +2254,16 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/has_single_bit.h \
   Runtime/Core/Public/Containers/UnrealString.h.inl \
   Runtime/Core/Public/Misc/StringFormatArg.h \
-  Runtime/Core/Public/HAL/PlatformTLS.h \
-  Runtime/Core/Public/GenericPlatform/GenericPlatformTLS.h \
-  Runtime/Core/Public/Mac/MacPlatformTLS.h \
-  Runtime/Core/Public/Apple/ApplePlatformTLS.h \
-  Runtime/Core/Public/Logging/LogMacros.h \
-  Runtime/Core/Public/Logging/LogCategory.h \
-  Runtime/Core/Public/UObject/NameTypes.h \
+  Runtime/Core/Public/Templates/RetainedRef.h \
+  Runtime/Core/Public/Templates/Tuple.h \
+  Runtime/Core/Public/Delegates/IntegerSequence.h \
   Runtime/Core/Public/HAL/CriticalSection.h \
   Runtime/Core/Public/Mac/MacCriticalSection.h \
   Runtime/Core/Public/HAL/PThreadCriticalSection.h \
   Runtime/Core/Public/HAL/PThreadRWLock.h \
   Runtime/Core/Public/Misc/Timespan.h \
   Runtime/Core/Public/Math/Interval.h \
+  Runtime/Core/Public/UObject/NameTypes.h \
   Runtime/Core/Public/Containers/StringConv.h \
   Runtime/Core/Public/UObject/UnrealNames.h \
   Runtime/Core/Public/UObject/UnrealNames.inl \
@@ -2248,56 +2273,26 @@
   Runtime/Core/Public/Containers/ArrayView.h \
   Runtime/Core/Public/Templates/IsConst.h \
   Runtime/Core/Public/Templates/PointerIsConvertibleFromTo.h \
-  Runtime/Core/Public/Logging/LogScopedCategoryAndVerbosityOverride.h \
-  Runtime/Core/Public/Logging/LogTrace.h \
-  Runtime/Core/Public/ProfilingDebugging/FormatArgsTrace.h \
-  Runtime/Core/Public/Modules/Boilerplate/ModuleBoilerplate.h \
-  Runtime/Core/Public/Modules/VisualizerDebuggingState.h \
-  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLC/Private/RiderLC.cpp \
-  /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLC/Private/RiderLC.hpp \
-  Runtime/Core/Public/CoreMinimal.h \
-  Runtime/Core/Public/Templates/IntegralConstant.h \
-  Runtime/Core/Public/Templates/IsClass.h \
-  Runtime/Core/Public/Misc/Compression.h \
-  Runtime/Core/Public/Containers/Map.h \
-  Runtime/Core/Public/Algo/Reverse.h \
-  Runtime/Core/Public/Containers/Set.h \
-  Runtime/Core/Public/Misc/StructBuilder.h \
-  Runtime/Core/Public/Templates/Function.h \
-  Runtime/Core/Public/Templates/FunctionFwd.h \
-  Runtime/Core/Public/Templates/IsInvocable.h \
-  Runtime/Core/Public/Templates/IsMemberPointer.h \
-  Runtime/Core/Public/Containers/SparseArray.h \
-  Runtime/Core/Public/Containers/ScriptArray.h \
-  Runtime/Core/Public/Containers/BitArray.h \
-  Runtime/Core/Public/Serialization/StructuredArchive.h \
-  Runtime/Core/Public/Serialization/Formatters/BinaryArchiveFormatter.h \
-  Runtime/Core/Public/Serialization/StructuredArchiveFormatter.h \
-  Runtime/Core/Public/Serialization/StructuredArchiveNameHelpers.h \
-  Runtime/Core/Public/Serialization/StructuredArchiveAdapters.h \
-  Runtime/Core/Public/Concepts/Insertable.h \
-  Runtime/Core/Public/Serialization/ArchiveProxy.h \
-  Runtime/Core/Public/Serialization/StructuredArchiveSlots.h \
-  Runtime/Core/Public/Misc/Optional.h \
-  Runtime/Core/Public/Serialization/StructuredArchiveFwd.h \
-  Runtime/Core/Public/Serialization/StructuredArchiveSlotBase.h \
-  Runtime/Core/Public/Templates/UniqueObj.h \
-  Runtime/Core/Public/Templates/UniquePtr.h \
-  Runtime/Core/Public/Templates/RemoveExtent.h \
-  Runtime/Core/Public/Serialization/StructuredArchiveDefines.h \
-  Runtime/Core/Public/Templates/RetainedRef.h \
-  Runtime/Core/Public/Templates/Tuple.h \
-  Runtime/Core/Public/Delegates/IntegerSequence.h \
   Runtime/Core/Public/Misc/FrameNumber.h \
   Runtime/Core/Public/Misc/Parse.h Runtime/Core/Public/Math/Color.h \
   Runtime/Core/Public/Math/ColorList.h \
   Runtime/Core/Public/Math/IntPoint.h \
   Runtime/Core/Public/Misc/LargeWorldCoordinatesSerializer.h \
   Runtime/Core/Public/Math/IntVector.h \
+  Runtime/Core/Public/Logging/LogCategory.h \
+  Runtime/Core/Public/Logging/LogMacros.h \
+  Runtime/Core/Public/Logging/LogScopedCategoryAndVerbosityOverride.h \
+  Runtime/Core/Public/Logging/LogTrace.h \
+  Runtime/Core/Public/ProfilingDebugging/FormatArgsTrace.h \
   Runtime/Core/Public/Math/Vector2D.h \
   Runtime/Core/Public/Misc/NetworkVersion.h \
   Runtime/Core/Public/Delegates/Delegate.h \
   Runtime/Core/Public/Templates/SharedPointer.h \
+  Runtime/Core/Public/CoreGlobals.h \
+  Runtime/Core/Public/HAL/PlatformTLS.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformTLS.h \
+  Runtime/Core/Public/Mac/MacPlatformTLS.h \
+  Runtime/Core/Public/Apple/ApplePlatformTLS.h \
   Runtime/Core/Public/Templates/SharedPointerInternals.h \
   Runtime/Core/Public/Templates/SharedPointerFwd.h \
   Runtime/Core/Public/Templates/SharedPointerTesting.inl \
@@ -2539,6 +2534,8 @@
   Runtime/Core/Public/Misc/CoreMisc.h \
   Runtime/Core/Public/HAL/ThreadSingleton.h \
   Runtime/Core/Public/HAL/TlsAutoCleanup.h \
+  Runtime/Core/Public/Modules/Boilerplate/ModuleBoilerplate.h \
+  Runtime/Core/Public/Modules/VisualizerDebuggingState.h \
   Runtime/Core/Public/Modules/ModuleInterface.h \
   Runtime/Launch/Resources/Version.h \
   /Users/ayoayo/Documents/Unreal\ Projects/CG/GPR102_Assessment2-main/Plugins/Developer/RiderLink/Source/RiderLink/Public/IRiderLink.hpp \
