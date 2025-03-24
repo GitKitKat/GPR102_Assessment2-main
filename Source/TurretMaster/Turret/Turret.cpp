@@ -30,8 +30,8 @@ ATurret::ATurret()
 	BoxCollider->SetupAttachment(RootComponent);
 	
 	DistanceToProjectile = {0.0f, 0.0f, 0.0f};
-	DistanceToRangeLimit = {5000.0f, 0.0f, 0.0f};
-	CurrentTarget = 0;
+	DistanceToRangeLimit = {3280.0f, 0.0f, 0.0f};
+	TargetPosition = false;
 		
 }
 
@@ -39,6 +39,8 @@ ATurret::ATurret()
 void ATurret::BeginPlay()
 {
 	Super::BeginPlay();
+
+	DistanceToRangeLimit = DistanceToRangeLimit + ArmMesh->GetComponentLocation();
 	
 }
 
@@ -47,29 +49,57 @@ void ATurret::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (TargetInRange.Num() > 0 && (TargetInRange[0]->GetActorLocation().Z < GetActorLocation().Z || TargetInRange[0]->GetActorLocation().Y < 0 || TargetInRange[0]->GetActorLocation().Y > 2200))
+	{
+		TargetInRange.RemoveAt(0);
+	}
 	if (TargetInRange.Num() > 0)
 	{
-		DistanceToProjectile.X = abs(TargetInRange[CurrentTarget]->GetActorLocation().X - GetActorLocation().X);
-		DistanceToProjectile.Y = abs(TargetInRange[CurrentTarget]->GetActorLocation().Y - GetActorLocation().Y);
-		DistanceToProjectile.Z = abs(TargetInRange[CurrentTarget]->GetActorLocation().Z - GetActorLocation().Z);
+
+		DistanceToProjectile = TargetInRange[0]->GetActorLocation();
+		if (DistanceToProjectile.Y < DistanceToRangeLimit.Y)
+		{
+			TargetPosition = true;
+		} else
+		{
+			TargetPosition = false;
+		}
 		
 	} else
 	{
-		DistanceToProjectile = FVector::ZeroVector;
+		DistanceToProjectile = GetActorLocation();
 	}
-	DrawDebugLine(GetWorld(), GetActorLocation(), GetActorLocation() + DistanceToRangeLimit, FColor::Green, true);
-	DrawDebugLine(GetWorld(), GetActorLocation(), GetActorLocation() + DistanceToProjectile, FColor::Red, false);
+	DrawDebugLine(GetWorld(), CentreMuzzle->GetComponentLocation(), DistanceToRangeLimit, FColor::Green, false);
+	DrawDebugLine(GetWorld(), GetActorLocation(), DistanceToProjectile, FColor::Red, false);
+	//DrawDebugLine(GetWorld(), GetActorLocation(), DistanceToProjectile, FColor::Blue, false);
 	
 	// (TODO) Calculate impact point
 
 	// (TODO) Set yaw and pitch
 	// x = roll; y = pitch; z = yaw
 	// estimate location at X
-	//float PitchAngle = FMath::Acos(FVector::DotProduct(DistanceToProjectile, DistanceToRangeLimit)/DistanceToProjectile.Size() * DistanceToRangeLimit.Size());
+//	float PitchAngle = FMath::Acos(FVector::DotProduct(DistanceToProjectile, DistanceToRangeLimit)/DistanceToProjectile.Size() * DistanceToRangeLimit.Size());
+	float absVector = sqrt(FVector::DotProduct(DistanceToProjectile, DistanceToProjectile)) * sqrt(FVector::DotProduct(DistanceToRangeLimit, DistanceToRangeLimit));
+	float YawAngle = FMath::Acos(FVector::DotProduct(DistanceToProjectile, DistanceToRangeLimit) / absVector);
+	//PitchAngle = FMath::RadiansToDegrees(PitchAngle);
+	YawAngle = FMath::RadiansToDegrees(YawAngle);
 	//float YawAngle = FMath::Asin(DistanceToProjectile.Z/DistanceToProjectile.X);
-	
+
+	if (TargetPosition)
+	{
+		YawAngle *= -1;
+		
+	}
+	if (GEngine)
+	{
+		FString TheFloatStr = FString::SanitizeFloat(YawAngle);
+		//FRotator CurrentRotation = RotationPoint->GetComponentRotation();
+		//float erm = CurrentRotation.Pitch;
+		//FString TheFloatStr = FString::SanitizeFloat(erm);
+		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Blue, *TheFloatStr);
+	}
 	//SetPitch(PitchAngle);
-	//SetYaw(YawAngle);
+	SetYaw(YawAngle);
 
 	// (TODO) Check muzzle is pointed at impact point
 

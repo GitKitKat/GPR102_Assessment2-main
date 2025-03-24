@@ -38,7 +38,7 @@ public:
 	
 	UFUNCTION(BlueprintCallable)
 	void SetPitch(float TargetPitch) const;
-
+	
 protected:
 	// Components
 	UPROPERTY(EditDefaultsOnly)
@@ -75,7 +75,7 @@ protected:
 	TArray<FVector> SecondContactArray;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int CurrentTarget;
+	bool TargetPosition;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FVector DistanceToProjectile;
