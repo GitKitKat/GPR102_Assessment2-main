@@ -40,7 +40,7 @@ void ATurret::BeginPlay()
 {
 	Super::BeginPlay();
 
-	DistanceToRangeLimit = DistanceToRangeLimit + ArmMesh->GetComponentLocation();
+	DistanceToRangeLimit = DistanceToRangeLimit + CentreMuzzle->GetComponentLocation();
 	
 }
 
@@ -49,7 +49,7 @@ void ATurret::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (TargetInRange.Num() > 0 && (TargetInRange[0]->GetActorLocation().Z < GetActorLocation().Z || TargetInRange[0]->GetActorLocation().Y < 0 || TargetInRange[0]->GetActorLocation().Y > 2200))
+	if (TargetInRange.Num() > 0 && (TargetInRange[0]->GetActorLocation().Z < GetActorLocation().Z || TargetInRange[0]->GetActorLocation().Y <= 0 || TargetInRange[0]->GetActorLocation().Y >= 2200))
 	{
 		TargetInRange.RemoveAt(0);
 	}
@@ -67,7 +67,7 @@ void ATurret::Tick(float DeltaTime)
 		
 	} else
 	{
-		DistanceToProjectile = GetActorLocation();
+		DistanceToProjectile = DistanceToRangeLimit;
 	}
 	DrawDebugLine(GetWorld(), CentreMuzzle->GetComponentLocation(), DistanceToRangeLimit, FColor::Green, false);
 	DrawDebugLine(GetWorld(), GetActorLocation(), DistanceToProjectile, FColor::Red, false);
@@ -79,8 +79,12 @@ void ATurret::Tick(float DeltaTime)
 	// x = roll; y = pitch; z = yaw
 	// estimate location at X
 //	float PitchAngle = FMath::Acos(FVector::DotProduct(DistanceToProjectile, DistanceToRangeLimit)/DistanceToProjectile.Size() * DistanceToRangeLimit.Size());
-	float absVector = sqrt(FVector::DotProduct(DistanceToProjectile, DistanceToProjectile)) * sqrt(FVector::DotProduct(DistanceToRangeLimit, DistanceToRangeLimit));
-	float YawAngle = FMath::Acos(FVector::DotProduct(DistanceToProjectile, DistanceToRangeLimit) / absVector);
+
+	float PitchAngle = FMath::Asin(abs(DistanceToProjectile.Z - DistanceToRangeLimit.Z) / sqrt(FVector::DotProduct(DistanceToProjectile, DistanceToProjectile)));
+	PitchAngle = FMath::RadiansToDegrees(PitchAngle);
+	
+	float absVectorPitch = sqrt(FVector::DotProduct(DistanceToProjectile, DistanceToProjectile)) * sqrt(FVector::DotProduct(DistanceToRangeLimit, DistanceToRangeLimit));
+	float YawAngle = FMath::Acos(FVector::DotProduct(DistanceToProjectile, DistanceToRangeLimit) / absVectorPitch);
 	//PitchAngle = FMath::RadiansToDegrees(PitchAngle);
 	YawAngle = FMath::RadiansToDegrees(YawAngle);
 	//float YawAngle = FMath::Asin(DistanceToProjectile.Z/DistanceToProjectile.X);
@@ -98,7 +102,7 @@ void ATurret::Tick(float DeltaTime)
 		//FString TheFloatStr = FString::SanitizeFloat(erm);
 		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Blue, *TheFloatStr);
 	}
-	//SetPitch(PitchAngle);
+	SetPitch(PitchAngle);
 	SetYaw(YawAngle);
 
 	// (TODO) Check muzzle is pointed at impact point
