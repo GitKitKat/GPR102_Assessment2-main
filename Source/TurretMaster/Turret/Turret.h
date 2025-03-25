@@ -82,5 +82,8 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FVector DistanceToRangeLimit;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FVector DistanceFromCentreMuzzle;
 	
 };
